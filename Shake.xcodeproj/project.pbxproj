@@ -7,25 +7,177 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4335667115989F6700D8A010 /* JdCreditsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4335666F15989F6700D8A010 /* JdCreditsController.m */; };
+		4335667215989F6700D8A010 /* JdCreditsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4335667015989F6700D8A010 /* JdCreditsController.xib */; };
+		433A16021594E3A10081F227 /* JdSineSignalCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A16011594E3A10081F227 /* JdSineSignalCell.m */; };
+		433A16041594E42C0081F227 /* JdSineSignalCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433A16031594E42C0081F227 /* JdSineSignalCell.xib */; };
+		433A16091594F2EA0081F227 /* JdSineSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 433A16071594F2EA0081F227 /* JdSineSetupController.m */; };
+		433A160A1594F2EA0081F227 /* JdSineSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 433A16081594F2EA0081F227 /* JdSineSetupController.xib */; };
+		434DCE47159B342700D9D585 /* ShakeIconImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE46159B342700D9D585 /* ShakeIconImage.png */; };
+		434DCE51159B374B00D9D585 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE50159B374B00D9D585 /* README.md */; };
+		434DCE59159B3EF300D9D585 /* Shake_1_Main.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE52159B3EF300D9D585 /* Shake_1_Main.png */; };
+		434DCE5A159B3EF300D9D585 /* Shake_2_Setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE53159B3EF300D9D585 /* Shake_2_Setup.png */; };
+		434DCE5B159B3EF300D9D585 /* Shake_3_Setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE54159B3EF300D9D585 /* Shake_3_Setup.png */; };
+		434DCE5C159B3EF300D9D585 /* Shake_4_Setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE55159B3EF300D9D585 /* Shake_4_Setup.png */; };
+		434DCE5D159B3EF300D9D585 /* Shake_5_Setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE56159B3EF300D9D585 /* Shake_5_Setup.png */; };
+		434DCE5E159B3EF300D9D585 /* Shake_6_Setup.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE57159B3EF300D9D585 /* Shake_6_Setup.png */; };
+		434DCE5F159B3EF300D9D585 /* Shake_7_Credits.png in Resources */ = {isa = PBXBuildFile; fileRef = 434DCE58159B3EF300D9D585 /* Shake_7_Credits.png */; };
+		43692FAA158B5CDA006F75F3 /* JdAccelerometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FA9158B5CDA006F75F3 /* JdAccelerometer.m */; };
+		43692FB3158B65D4006F75F3 /* JdFilterBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FB2158B65D4006F75F3 /* JdFilterBase.m */; };
+		43692FB6158B6787006F75F3 /* JdGenericFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FB5158B6787006F75F3 /* JdGenericFilter.m */; };
+		43692FBA158B708C006F75F3 /* JdMasterControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FB9158B708C006F75F3 /* JdMasterControl.m */; };
+		43692FBE158B70EF006F75F3 /* JdSimpleLP.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FBD158B70EF006F75F3 /* JdSimpleLP.m */; };
+		43692FC1158B7101006F75F3 /* JdSimpleHP.m in Sources */ = {isa = PBXBuildFile; fileRef = 43692FC0158B7101006F75F3 /* JdSimpleHP.m */; };
 		4380D19E1586A1F000FF915A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4380D19D1586A1F000FF915A /* UIKit.framework */; };
 		4380D1A01586A1F000FF915A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4380D19F1586A1F000FF915A /* Foundation.framework */; };
 		4380D1A21586A1F000FF915A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4380D1A11586A1F000FF915A /* CoreGraphics.framework */; };
 		4380D1A81586A1F000FF915A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1A61586A1F000FF915A /* InfoPlist.strings */; };
 		4380D1AA1586A1F000FF915A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1A91586A1F000FF915A /* main.m */; };
 		4380D1AE1586A1F000FF915A /* JdAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1AD1586A1F000FF915A /* JdAppDelegate.m */; };
+		4380D1B91586A22000FF915A /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1B81586A22000FF915A /* Default.png */; };
+		4380D1BB1586A22200FF915A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1BA1586A22200FF915A /* Default@2x.png */; };
+		4380D1C11586A23500FF915A /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1C01586A23500FF915A /* Default-Portrait~ipad.png */; };
+		4380D1C31586A23800FF915A /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1C21586A23800FF915A /* Default-Portrait@2x~ipad.png */; };
+		4380D1C51586A23C00FF915A /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1C41586A23C00FF915A /* Default-Landscape~ipad.png */; };
+		4380D1C71586A23F00FF915A /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1C61586A23F00FF915A /* Default-Landscape@2x~ipad.png */; };
+		4380D1D21586A31000FF915A /* JdMainController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1D01586A31000FF915A /* JdMainController.m */; };
+		4380D1D31586A31000FF915A /* JdMainController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4380D1D11586A31000FF915A /* JdMainController.xib */; };
+		4380D1E41589097D00FF915A /* JdSineSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1E31589097D00FF915A /* JdSineSignal.m */; };
+		4380D1E81589110C00FF915A /* JdRMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1E71589110C00FF915A /* JdRMS.m */; };
+		4380D1ED1589149D00FF915A /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1EC1589149D00FF915A /* NSMutableArray+QueueAdditions.m */; };
+		43958AA3158A953200E4566A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AA2158A953200E4566A /* GraphView.m */; };
+		43958AA5158A9ACD00E4566A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43958AA4158A9ACD00E4566A /* QuartzCore.framework */; };
+		43958AA8158A9C0100E4566A /* GraphViewSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AA7158A9C0100E4566A /* GraphViewSegment.m */; };
+		43958AAB158A9CDB00E4566A /* GraphTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AAA158A9CDB00E4566A /* GraphTextView.m */; };
+		43958AAE158A9E5000E4566A /* QuartzHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AAD158A9E5000E4566A /* QuartzHelpers.m */; };
+		43969EBF158D323E00B205EE /* JdConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 43969EBE158D323E00B205EE /* JdConfiguration.m */; };
+		439A2F181593BC850001E992 /* JdSetupNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F161593BC850001E992 /* JdSetupNavigation.m */; };
+		439A2F191593BC850001E992 /* JdSetupNavigation.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F171593BC850001E992 /* JdSetupNavigation.xib */; };
+		439A2F261593C29A0001E992 /* JdOverallSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F251593C29A0001E992 /* JdOverallSetupController.m */; };
+		439A2F281593C5430001E992 /* JdOverallSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F271593C5430001E992 /* JdOverallSetupController.xib */; };
+		439A2F301593E0D10001E992 /* JdAxisSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F2E1593E0D10001E992 /* JdAxisSetupController.m */; };
+		439A2F311593E0D10001E992 /* JdAxisSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F2F1593E0D10001E992 /* JdAxisSetupController.xib */; };
+		439A2F361593F2670001E992 /* JdSignalSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F341593F2670001E992 /* JdSignalSetupController.m */; };
+		439A2F371593F2670001E992 /* JdSignalSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F351593F2670001E992 /* JdSignalSetupController.xib */; };
+		439A2F3C1593F46E0001E992 /* JdFilterSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F3A1593F46E0001E992 /* JdFilterSetupController.m */; };
+		439A2F3D1593F46E0001E992 /* JdFilterSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F3B1593F46E0001E992 /* JdFilterSetupController.xib */; };
+		439A2F421593F5CB0001E992 /* JdDetectionSetupController.m in Sources */ = {isa = PBXBuildFile; fileRef = 439A2F401593F5CB0001E992 /* JdDetectionSetupController.m */; };
+		439A2F431593F5CB0001E992 /* JdDetectionSetupController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 439A2F411593F5CB0001E992 /* JdDetectionSetupController.xib */; };
+		43B1880C1598BA2200A9D1F2 /* icon-iphone-shake-57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B1880B1598BA2200A9D1F2 /* icon-iphone-shake-57x57.png */; };
+		43B1880F1598BA2700A9D1F2 /* icon-iphone-shake-114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B1880E1598BA2700A9D1F2 /* icon-iphone-shake-114x114.png */; };
+		43B188111598BF6000A9D1F2 /* icon-ipad-shake-72x72.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B188101598BF6000A9D1F2 /* icon-ipad-shake-72x72.png */; };
+		43B188131598BF6500A9D1F2 /* icon-ipad-shake-144x144.png in Resources */ = {isa = PBXBuildFile; fileRef = 43B188121598BF6500A9D1F2 /* icon-ipad-shake-144x144.png */; };
+		43C6A54A1593372400706A1F /* JdStepSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C6A5491593372400706A1F /* JdStepSignal.m */; };
+		43C6A54E1593398200706A1F /* JdImpulseSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C6A54D1593398200706A1F /* JdImpulseSignal.m */; };
+		43C6A55B1593772600706A1F /* JdAxis.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C6A55A1593772600706A1F /* JdAxis.m */; };
+		43C6A55E1593800200706A1F /* JdFilterList.m in Sources */ = {isa = PBXBuildFile; fileRef = 43C6A55D1593800200706A1F /* JdFilterList.m */; };
+		43CBCE181592790E00A515E4 /* JdSimpleFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 43CBCE171592790E00A515E4 /* JdSimpleFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4335666E15989F6700D8A010 /* JdCreditsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdCreditsController.h; sourceTree = "<group>"; };
+		4335666F15989F6700D8A010 /* JdCreditsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdCreditsController.m; sourceTree = "<group>"; };
+		4335667015989F6700D8A010 /* JdCreditsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdCreditsController.xib; sourceTree = "<group>"; };
+		433A16001594E3A10081F227 /* JdSineSignalCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSineSignalCell.h; sourceTree = "<group>"; };
+		433A16011594E3A10081F227 /* JdSineSignalCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSineSignalCell.m; sourceTree = "<group>"; };
+		433A16031594E42C0081F227 /* JdSineSignalCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdSineSignalCell.xib; sourceTree = "<group>"; };
+		433A16061594F2EA0081F227 /* JdSineSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSineSetupController.h; sourceTree = "<group>"; };
+		433A16071594F2EA0081F227 /* JdSineSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSineSetupController.m; sourceTree = "<group>"; };
+		433A16081594F2EA0081F227 /* JdSineSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdSineSetupController.xib; sourceTree = "<group>"; };
+		434DCE46159B342700D9D585 /* ShakeIconImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ShakeIconImage.png; sourceTree = "<group>"; };
+		434DCE50159B374B00D9D585 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		434DCE52159B3EF300D9D585 /* Shake_1_Main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_1_Main.png; sourceTree = "<group>"; };
+		434DCE53159B3EF300D9D585 /* Shake_2_Setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_2_Setup.png; sourceTree = "<group>"; };
+		434DCE54159B3EF300D9D585 /* Shake_3_Setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_3_Setup.png; sourceTree = "<group>"; };
+		434DCE55159B3EF300D9D585 /* Shake_4_Setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_4_Setup.png; sourceTree = "<group>"; };
+		434DCE56159B3EF300D9D585 /* Shake_5_Setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_5_Setup.png; sourceTree = "<group>"; };
+		434DCE57159B3EF300D9D585 /* Shake_6_Setup.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_6_Setup.png; sourceTree = "<group>"; };
+		434DCE58159B3EF300D9D585 /* Shake_7_Credits.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Shake_7_Credits.png; sourceTree = "<group>"; };
+		43692FA8158B5CDA006F75F3 /* JdAccelerometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdAccelerometer.h; sourceTree = "<group>"; };
+		43692FA9158B5CDA006F75F3 /* JdAccelerometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdAccelerometer.m; sourceTree = "<group>"; };
+		43692FAF158B5DB4006F75F3 /* JdAccelerometerProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdAccelerometerProtocol.h; sourceTree = "<group>"; };
+		43692FB1158B65D4006F75F3 /* JdFilterBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdFilterBase.h; sourceTree = "<group>"; };
+		43692FB2158B65D4006F75F3 /* JdFilterBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdFilterBase.m; sourceTree = "<group>"; };
+		43692FB4158B6787006F75F3 /* JdGenericFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdGenericFilter.h; sourceTree = "<group>"; };
+		43692FB5158B6787006F75F3 /* JdGenericFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdGenericFilter.m; sourceTree = "<group>"; };
+		43692FB8158B708C006F75F3 /* JdMasterControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdMasterControl.h; sourceTree = "<group>"; };
+		43692FB9158B708C006F75F3 /* JdMasterControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdMasterControl.m; sourceTree = "<group>"; };
+		43692FBC158B70EF006F75F3 /* JdSimpleLP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSimpleLP.h; sourceTree = "<group>"; };
+		43692FBD158B70EF006F75F3 /* JdSimpleLP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSimpleLP.m; sourceTree = "<group>"; };
+		43692FBF158B7101006F75F3 /* JdSimpleHP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSimpleHP.h; sourceTree = "<group>"; };
+		43692FC0158B7101006F75F3 /* JdSimpleHP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSimpleHP.m; sourceTree = "<group>"; };
 		4380D1991586A1F000FF915A /* Shake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4380D19D1586A1F000FF915A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4380D19F1586A1F000FF915A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		4380D1A11586A1F000FF915A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		4380D1A51586A1F000FF915A /* Shake-Info.plist */ = {isa = PBXFileReference; path = "Shake-Info.plist"; sourceTree = "<group>"; };
+		4380D1A51586A1F000FF915A /* Shake-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Shake-Info.plist"; sourceTree = "<group>"; };
 		4380D1A71586A1F000FF915A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		4380D1A91586A1F000FF915A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		4380D1AB1586A1F000FF915A /* Shake-Prefix.pch */ = {isa = PBXFileReference; path = "Shake-Prefix.pch"; sourceTree = "<group>"; };
-		4380D1AC1586A1F000FF915A /* JdAppDelegate.h */ = {isa = PBXFileReference; path = JdAppDelegate.h; sourceTree = "<group>"; };
+		4380D1AB1586A1F000FF915A /* Shake-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Shake-Prefix.pch"; sourceTree = "<group>"; };
+		4380D1AC1586A1F000FF915A /* JdAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdAppDelegate.h; sourceTree = "<group>"; };
 		4380D1AD1586A1F000FF915A /* JdAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JdAppDelegate.m; sourceTree = "<group>"; };
+		4380D1B81586A22000FF915A /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = ../Default.png; sourceTree = "<group>"; };
+		4380D1BA1586A22200FF915A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "../Default@2x.png"; sourceTree = "<group>"; };
+		4380D1C01586A23500FF915A /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		4380D1C21586A23800FF915A /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		4380D1C41586A23C00FF915A /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		4380D1C61586A23F00FF915A /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		4380D1CF1586A31000FF915A /* JdMainController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdMainController.h; sourceTree = "<group>"; };
+		4380D1D01586A31000FF915A /* JdMainController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdMainController.m; sourceTree = "<group>"; };
+		4380D1D11586A31000FF915A /* JdMainController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdMainController.xib; sourceTree = "<group>"; };
+		4380D1E21589097D00FF915A /* JdSineSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSineSignal.h; sourceTree = "<group>"; };
+		4380D1E31589097D00FF915A /* JdSineSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSineSignal.m; sourceTree = "<group>"; };
+		4380D1E61589110C00FF915A /* JdRMS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdRMS.h; sourceTree = "<group>"; };
+		4380D1E71589110C00FF915A /* JdRMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdRMS.m; sourceTree = "<group>"; };
+		4380D1EB1589149D00FF915A /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
+		4380D1EC1589149D00FF915A /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		43958AA1158A953200E4566A /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
+		43958AA2158A953200E4566A /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
+		43958AA4158A9ACD00E4566A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		43958AA6158A9C0100E4566A /* GraphViewSegment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphViewSegment.h; sourceTree = "<group>"; };
+		43958AA7158A9C0100E4566A /* GraphViewSegment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphViewSegment.m; sourceTree = "<group>"; };
+		43958AA9158A9CDB00E4566A /* GraphTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphTextView.h; sourceTree = "<group>"; };
+		43958AAA158A9CDB00E4566A /* GraphTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphTextView.m; sourceTree = "<group>"; };
+		43958AAC158A9E5000E4566A /* QuartzHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuartzHelpers.h; sourceTree = "<group>"; };
+		43958AAD158A9E5000E4566A /* QuartzHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuartzHelpers.m; sourceTree = "<group>"; };
+		43969EBD158D323E00B205EE /* JdConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdConfiguration.h; sourceTree = "<group>"; };
+		43969EBE158D323E00B205EE /* JdConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdConfiguration.m; sourceTree = "<group>"; };
+		43969EC0158D3F8A00B205EE /* JdFilterTypes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdFilterTypes.h; sourceTree = "<group>"; };
+		439A2F151593BC850001E992 /* JdSetupNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSetupNavigation.h; sourceTree = "<group>"; };
+		439A2F161593BC850001E992 /* JdSetupNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSetupNavigation.m; sourceTree = "<group>"; };
+		439A2F171593BC850001E992 /* JdSetupNavigation.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdSetupNavigation.xib; sourceTree = "<group>"; };
+		439A2F241593C29A0001E992 /* JdOverallSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdOverallSetupController.h; sourceTree = "<group>"; };
+		439A2F251593C29A0001E992 /* JdOverallSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdOverallSetupController.m; sourceTree = "<group>"; };
+		439A2F271593C5430001E992 /* JdOverallSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdOverallSetupController.xib; sourceTree = "<group>"; };
+		439A2F2D1593E0D10001E992 /* JdAxisSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdAxisSetupController.h; sourceTree = "<group>"; };
+		439A2F2E1593E0D10001E992 /* JdAxisSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdAxisSetupController.m; sourceTree = "<group>"; };
+		439A2F2F1593E0D10001E992 /* JdAxisSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdAxisSetupController.xib; sourceTree = "<group>"; };
+		439A2F331593F2670001E992 /* JdSignalSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSignalSetupController.h; sourceTree = "<group>"; };
+		439A2F341593F2670001E992 /* JdSignalSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSignalSetupController.m; sourceTree = "<group>"; };
+		439A2F351593F2670001E992 /* JdSignalSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdSignalSetupController.xib; sourceTree = "<group>"; };
+		439A2F391593F46E0001E992 /* JdFilterSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdFilterSetupController.h; sourceTree = "<group>"; };
+		439A2F3A1593F46E0001E992 /* JdFilterSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdFilterSetupController.m; sourceTree = "<group>"; };
+		439A2F3B1593F46E0001E992 /* JdFilterSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdFilterSetupController.xib; sourceTree = "<group>"; };
+		439A2F3F1593F5CB0001E992 /* JdDetectionSetupController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdDetectionSetupController.h; sourceTree = "<group>"; };
+		439A2F401593F5CB0001E992 /* JdDetectionSetupController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdDetectionSetupController.m; sourceTree = "<group>"; };
+		439A2F411593F5CB0001E992 /* JdDetectionSetupController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JdDetectionSetupController.xib; sourceTree = "<group>"; };
+		43B1880B1598BA2200A9D1F2 /* icon-iphone-shake-57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-iphone-shake-57x57.png"; path = "../icon-iphone-shake-57x57.png"; sourceTree = "<group>"; };
+		43B1880E1598BA2700A9D1F2 /* icon-iphone-shake-114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-iphone-shake-114x114.png"; path = "../icon-iphone-shake-114x114.png"; sourceTree = "<group>"; };
+		43B188101598BF6000A9D1F2 /* icon-ipad-shake-72x72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-ipad-shake-72x72.png"; path = "../icon-ipad-shake-72x72.png"; sourceTree = "<group>"; };
+		43B188121598BF6500A9D1F2 /* icon-ipad-shake-144x144.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "icon-ipad-shake-144x144.png"; path = "../icon-ipad-shake-144x144.png"; sourceTree = "<group>"; };
+		43B9424D158F9BB50021BB32 /* JdDigitalFilterDesigns.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdDigitalFilterDesigns.h; sourceTree = "<group>"; };
+		43B9424F158F9BE40021BB32 /* JdDigitalFilterTemplate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdDigitalFilterTemplate.h; sourceTree = "<group>"; };
+		43C6A5481593372400706A1F /* JdStepSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdStepSignal.h; sourceTree = "<group>"; };
+		43C6A5491593372400706A1F /* JdStepSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdStepSignal.m; sourceTree = "<group>"; };
+		43C6A54C1593398200706A1F /* JdImpulseSignal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdImpulseSignal.h; sourceTree = "<group>"; };
+		43C6A54D1593398200706A1F /* JdImpulseSignal.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdImpulseSignal.m; sourceTree = "<group>"; };
+		43C6A5591593772600706A1F /* JdAxis.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdAxis.h; sourceTree = "<group>"; };
+		43C6A55A1593772600706A1F /* JdAxis.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdAxis.m; sourceTree = "<group>"; };
+		43C6A55C1593800200706A1F /* JdFilterList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdFilterList.h; sourceTree = "<group>"; };
+		43C6A55D1593800200706A1F /* JdFilterList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdFilterList.m; sourceTree = "<group>"; };
+		43C6A56015938F4800706A1F /* JdAxisList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdAxisList.h; sourceTree = "<group>"; };
+		43CBCE161592790E00A515E4 /* JdSimpleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSimpleFilter.h; sourceTree = "<group>"; };
+		43CBCE171592790E00A515E4 /* JdSimpleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSimpleFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +185,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43958AA5158A9ACD00E4566A /* QuartzCore.framework in Frameworks */,
 				4380D19E1586A1F000FF915A /* UIKit.framework in Frameworks */,
 				4380D1A01586A1F000FF915A /* Foundation.framework in Frameworks */,
 				4380D1A21586A1F000FF915A /* CoreGraphics.framework in Frameworks */,
@@ -42,9 +195,119 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		430DA28B1594AD7300458261 /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				43969EBD158D323E00B205EE /* JdConfiguration.h */,
+				43969EBE158D323E00B205EE /* JdConfiguration.m */,
+			);
+			name = Configuration;
+			sourceTree = "<group>";
+		};
+		430DA28C1594AD8500458261 /* Axis */ = {
+			isa = PBXGroup;
+			children = (
+				43C6A5591593772600706A1F /* JdAxis.h */,
+				43C6A55A1593772600706A1F /* JdAxis.m */,
+				43C6A56015938F4800706A1F /* JdAxisList.h */,
+			);
+			name = Axis;
+			sourceTree = "<group>";
+		};
+		431A96CA158A04C500261D18 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1CF1586A31000FF915A /* JdMainController.h */,
+				4380D1D01586A31000FF915A /* JdMainController.m */,
+				4380D1D11586A31000FF915A /* JdMainController.xib */,
+			);
+			name = Main;
+			sourceTree = "<group>";
+		};
+		431A96CC158A05A500261D18 /* Setup */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F3E1593F5A60001E992 /* Detection */,
+				439A2F381593F4570001E992 /* Filter */,
+				439A2F321593F24A0001E992 /* Signal */,
+				439A2F291593E0770001E992 /* Axis */,
+				439A2F1E1593C05D0001E992 /* Overall */,
+				439A2F131593BC560001E992 /* Navigation */,
+			);
+			name = Setup;
+			sourceTree = "<group>";
+		};
+		4335666915989F0D00D8A010 /* Credits */ = {
+			isa = PBXGroup;
+			children = (
+				4335666E15989F6700D8A010 /* JdCreditsController.h */,
+				4335666F15989F6700D8A010 /* JdCreditsController.m */,
+				4335667015989F6700D8A010 /* JdCreditsController.xib */,
+			);
+			name = Credits;
+			sourceTree = "<group>";
+		};
+		433A15FE1594E2BF0081F227 /* SineCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				433A16001594E3A10081F227 /* JdSineSignalCell.h */,
+				433A16011594E3A10081F227 /* JdSineSignalCell.m */,
+				433A16031594E42C0081F227 /* JdSineSignalCell.xib */,
+			);
+			name = SineCustomCell;
+			sourceTree = "<group>";
+		};
+		433A16051594F2A70081F227 /* SineSetup */ = {
+			isa = PBXGroup;
+			children = (
+				433A16061594F2EA0081F227 /* JdSineSetupController.h */,
+				433A16071594F2EA0081F227 /* JdSineSetupController.m */,
+				433A16081594F2EA0081F227 /* JdSineSetupController.xib */,
+			);
+			name = SineSetup;
+			sourceTree = "<group>";
+		};
+		434DCE4D159B354500D9D585 /* GitHub */ = {
+			isa = PBXGroup;
+			children = (
+				434DCE50159B374B00D9D585 /* README.md */,
+				434DCE52159B3EF300D9D585 /* Shake_1_Main.png */,
+				434DCE53159B3EF300D9D585 /* Shake_2_Setup.png */,
+				434DCE54159B3EF300D9D585 /* Shake_3_Setup.png */,
+				434DCE55159B3EF300D9D585 /* Shake_4_Setup.png */,
+				434DCE56159B3EF300D9D585 /* Shake_5_Setup.png */,
+				434DCE57159B3EF300D9D585 /* Shake_6_Setup.png */,
+				434DCE58159B3EF300D9D585 /* Shake_7_Credits.png */,
+			);
+			name = GitHub;
+			sourceTree = "<group>";
+		};
+		43692FB7158B7057006F75F3 /* MasterControl */ = {
+			isa = PBXGroup;
+			children = (
+				43692FB8158B708C006F75F3 /* JdMasterControl.h */,
+				43692FB9158B708C006F75F3 /* JdMasterControl.m */,
+			);
+			name = MasterControl;
+			sourceTree = "<group>";
+		};
+		43692FBB158B70C9006F75F3 /* Specific */ = {
+			isa = PBXGroup;
+			children = (
+				43692FBC158B70EF006F75F3 /* JdSimpleLP.h */,
+				43692FBD158B70EF006F75F3 /* JdSimpleLP.m */,
+				43692FBF158B7101006F75F3 /* JdSimpleHP.h */,
+				43692FC0158B7101006F75F3 /* JdSimpleHP.m */,
+				43CBCE161592790E00A515E4 /* JdSimpleFilter.h */,
+				43CBCE171592790E00A515E4 /* JdSimpleFilter.m */,
+			);
+			name = Specific;
+			sourceTree = "<group>";
+		};
 		4380D18E1586A1EF00FF915A = {
 			isa = PBXGroup;
 			children = (
+				434DCE4D159B354500D9D585 /* GitHub */,
 				4380D1A31586A1F000FF915A /* Shake */,
 				4380D19C1586A1F000FF915A /* Frameworks */,
 				4380D19A1586A1F000FF915A /* Products */,
@@ -62,6 +325,7 @@
 		4380D19C1586A1F000FF915A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				43958AA4158A9ACD00E4566A /* QuartzCore.framework */,
 				4380D19D1586A1F000FF915A /* UIKit.framework */,
 				4380D19F1586A1F000FF915A /* Foundation.framework */,
 				4380D1A11586A1F000FF915A /* CoreGraphics.framework */,
@@ -72,9 +336,13 @@
 		4380D1A31586A1F000FF915A /* Shake */ = {
 			isa = PBXGroup;
 			children = (
-				4380D1AC1586A1F000FF915A /* JdAppDelegate.h */,
-				4380D1AD1586A1F000FF915A /* JdAppDelegate.m */,
+				43958A9F158A94FC00E4566A /* FromAccelerometerGraph */,
+				4380D1E91589146C00FF915A /* Categories */,
+				4380D1D81586A7CE00FF915A /* Models */,
+				4380D1CC1586A26C00FF915A /* AppDelegate */,
+				4380D1CD1586A27400FF915A /* Graphics */,
 				4380D1A41586A1F000FF915A /* Supporting Files */,
+				4380D1CE1586A2B100FF915A /* ViewControllers */,
 			);
 			path = Shake;
 			sourceTree = "<group>";
@@ -88,6 +356,200 @@
 				4380D1AB1586A1F000FF915A /* Shake-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4380D1CC1586A26C00FF915A /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1AC1586A1F000FF915A /* JdAppDelegate.h */,
+				4380D1AD1586A1F000FF915A /* JdAppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		4380D1CD1586A27400FF915A /* Graphics */ = {
+			isa = PBXGroup;
+			children = (
+				434DCE46159B342700D9D585 /* ShakeIconImage.png */,
+				43B188121598BF6500A9D1F2 /* icon-ipad-shake-144x144.png */,
+				43B188101598BF6000A9D1F2 /* icon-ipad-shake-72x72.png */,
+				43B1880E1598BA2700A9D1F2 /* icon-iphone-shake-114x114.png */,
+				43B1880B1598BA2200A9D1F2 /* icon-iphone-shake-57x57.png */,
+				4380D1C61586A23F00FF915A /* Default-Landscape@2x~ipad.png */,
+				4380D1C41586A23C00FF915A /* Default-Landscape~ipad.png */,
+				4380D1C21586A23800FF915A /* Default-Portrait@2x~ipad.png */,
+				4380D1C01586A23500FF915A /* Default-Portrait~ipad.png */,
+				4380D1BA1586A22200FF915A /* Default@2x.png */,
+				4380D1B81586A22000FF915A /* Default.png */,
+			);
+			name = Graphics;
+			sourceTree = "<group>";
+		};
+		4380D1CE1586A2B100FF915A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4335666915989F0D00D8A010 /* Credits */,
+				431A96CC158A05A500261D18 /* Setup */,
+				431A96CA158A04C500261D18 /* Main */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4380D1D81586A7CE00FF915A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				430DA28C1594AD8500458261 /* Axis */,
+				430DA28B1594AD7300458261 /* Configuration */,
+				43692FB7158B7057006F75F3 /* MasterControl */,
+				4380D1E5158910F800FF915A /* Detection */,
+				4380D1E11589096400FF915A /* Signal Generators */,
+				4380D1DD1586AB7C00FF915A /* DigitalFilters */,
+				4380D1D91586A7D500FF915A /* Accelerometer */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		4380D1D91586A7D500FF915A /* Accelerometer */ = {
+			isa = PBXGroup;
+			children = (
+				43692FA8158B5CDA006F75F3 /* JdAccelerometer.h */,
+				43692FA9158B5CDA006F75F3 /* JdAccelerometer.m */,
+				43692FAF158B5DB4006F75F3 /* JdAccelerometerProtocol.h */,
+			);
+			name = Accelerometer;
+			sourceTree = "<group>";
+		};
+		4380D1DD1586AB7C00FF915A /* DigitalFilters */ = {
+			isa = PBXGroup;
+			children = (
+				43C6A55C1593800200706A1F /* JdFilterList.h */,
+				43C6A55D1593800200706A1F /* JdFilterList.m */,
+				43692FBB158B70C9006F75F3 /* Specific */,
+				43692FB1158B65D4006F75F3 /* JdFilterBase.h */,
+				43692FB2158B65D4006F75F3 /* JdFilterBase.m */,
+				43692FB4158B6787006F75F3 /* JdGenericFilter.h */,
+				43692FB5158B6787006F75F3 /* JdGenericFilter.m */,
+				43969EC0158D3F8A00B205EE /* JdFilterTypes.h */,
+				43B9424D158F9BB50021BB32 /* JdDigitalFilterDesigns.h */,
+				43B9424F158F9BE40021BB32 /* JdDigitalFilterTemplate.h */,
+			);
+			name = DigitalFilters;
+			sourceTree = "<group>";
+		};
+		4380D1E11589096400FF915A /* Signal Generators */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1E21589097D00FF915A /* JdSineSignal.h */,
+				4380D1E31589097D00FF915A /* JdSineSignal.m */,
+				43C6A5481593372400706A1F /* JdStepSignal.h */,
+				43C6A5491593372400706A1F /* JdStepSignal.m */,
+				43C6A54C1593398200706A1F /* JdImpulseSignal.h */,
+				43C6A54D1593398200706A1F /* JdImpulseSignal.m */,
+			);
+			name = "Signal Generators";
+			sourceTree = "<group>";
+		};
+		4380D1E5158910F800FF915A /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1E61589110C00FF915A /* JdRMS.h */,
+				4380D1E71589110C00FF915A /* JdRMS.m */,
+			);
+			name = Detection;
+			sourceTree = "<group>";
+		};
+		4380D1E91589146C00FF915A /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1EA1589147B00FF915A /* Queue */,
+			);
+			name = Categories;
+			sourceTree = "<group>";
+		};
+		4380D1EA1589147B00FF915A /* Queue */ = {
+			isa = PBXGroup;
+			children = (
+				4380D1EB1589149D00FF915A /* NSMutableArray+QueueAdditions.h */,
+				4380D1EC1589149D00FF915A /* NSMutableArray+QueueAdditions.m */,
+			);
+			name = Queue;
+			sourceTree = "<group>";
+		};
+		43958A9F158A94FC00E4566A /* FromAccelerometerGraph */ = {
+			isa = PBXGroup;
+			children = (
+				43958AA1158A953200E4566A /* GraphView.h */,
+				43958AA2158A953200E4566A /* GraphView.m */,
+				43958AA6158A9C0100E4566A /* GraphViewSegment.h */,
+				43958AA7158A9C0100E4566A /* GraphViewSegment.m */,
+				43958AA9158A9CDB00E4566A /* GraphTextView.h */,
+				43958AAA158A9CDB00E4566A /* GraphTextView.m */,
+				43958AAC158A9E5000E4566A /* QuartzHelpers.h */,
+				43958AAD158A9E5000E4566A /* QuartzHelpers.m */,
+			);
+			name = FromAccelerometerGraph;
+			sourceTree = "<group>";
+		};
+		439A2F131593BC560001E992 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F151593BC850001E992 /* JdSetupNavigation.h */,
+				439A2F161593BC850001E992 /* JdSetupNavigation.m */,
+				439A2F171593BC850001E992 /* JdSetupNavigation.xib */,
+			);
+			name = Navigation;
+			sourceTree = "<group>";
+		};
+		439A2F1E1593C05D0001E992 /* Overall */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F241593C29A0001E992 /* JdOverallSetupController.h */,
+				439A2F251593C29A0001E992 /* JdOverallSetupController.m */,
+				439A2F271593C5430001E992 /* JdOverallSetupController.xib */,
+			);
+			name = Overall;
+			sourceTree = "<group>";
+		};
+		439A2F291593E0770001E992 /* Axis */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F2D1593E0D10001E992 /* JdAxisSetupController.h */,
+				439A2F2E1593E0D10001E992 /* JdAxisSetupController.m */,
+				439A2F2F1593E0D10001E992 /* JdAxisSetupController.xib */,
+			);
+			name = Axis;
+			sourceTree = "<group>";
+		};
+		439A2F321593F24A0001E992 /* Signal */ = {
+			isa = PBXGroup;
+			children = (
+				433A16051594F2A70081F227 /* SineSetup */,
+				433A15FE1594E2BF0081F227 /* SineCustomCell */,
+				439A2F331593F2670001E992 /* JdSignalSetupController.h */,
+				439A2F341593F2670001E992 /* JdSignalSetupController.m */,
+				439A2F351593F2670001E992 /* JdSignalSetupController.xib */,
+			);
+			name = Signal;
+			sourceTree = "<group>";
+		};
+		439A2F381593F4570001E992 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F391593F46E0001E992 /* JdFilterSetupController.h */,
+				439A2F3A1593F46E0001E992 /* JdFilterSetupController.m */,
+				439A2F3B1593F46E0001E992 /* JdFilterSetupController.xib */,
+			);
+			name = Filter;
+			sourceTree = "<group>";
+		};
+		439A2F3E1593F5A60001E992 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				439A2F3F1593F5CB0001E992 /* JdDetectionSetupController.h */,
+				439A2F401593F5CB0001E992 /* JdDetectionSetupController.m */,
+				439A2F411593F5CB0001E992 /* JdDetectionSetupController.xib */,
+			);
+			name = Detection;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,6 +605,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				4380D1A81586A1F000FF915A /* InfoPlist.strings in Resources */,
+				4380D1B91586A22000FF915A /* Default.png in Resources */,
+				4380D1BB1586A22200FF915A /* Default@2x.png in Resources */,
+				4380D1C11586A23500FF915A /* Default-Portrait~ipad.png in Resources */,
+				4380D1C31586A23800FF915A /* Default-Portrait@2x~ipad.png in Resources */,
+				4380D1C51586A23C00FF915A /* Default-Landscape~ipad.png in Resources */,
+				4380D1C71586A23F00FF915A /* Default-Landscape@2x~ipad.png in Resources */,
+				4380D1D31586A31000FF915A /* JdMainController.xib in Resources */,
+				439A2F191593BC850001E992 /* JdSetupNavigation.xib in Resources */,
+				439A2F281593C5430001E992 /* JdOverallSetupController.xib in Resources */,
+				439A2F311593E0D10001E992 /* JdAxisSetupController.xib in Resources */,
+				439A2F371593F2670001E992 /* JdSignalSetupController.xib in Resources */,
+				439A2F3D1593F46E0001E992 /* JdFilterSetupController.xib in Resources */,
+				439A2F431593F5CB0001E992 /* JdDetectionSetupController.xib in Resources */,
+				433A16041594E42C0081F227 /* JdSineSignalCell.xib in Resources */,
+				433A160A1594F2EA0081F227 /* JdSineSetupController.xib in Resources */,
+				4335667215989F6700D8A010 /* JdCreditsController.xib in Resources */,
+				43B1880C1598BA2200A9D1F2 /* icon-iphone-shake-57x57.png in Resources */,
+				43B1880F1598BA2700A9D1F2 /* icon-iphone-shake-114x114.png in Resources */,
+				43B188111598BF6000A9D1F2 /* icon-ipad-shake-72x72.png in Resources */,
+				43B188131598BF6500A9D1F2 /* icon-ipad-shake-144x144.png in Resources */,
+				434DCE47159B342700D9D585 /* ShakeIconImage.png in Resources */,
+				434DCE51159B374B00D9D585 /* README.md in Resources */,
+				434DCE59159B3EF300D9D585 /* Shake_1_Main.png in Resources */,
+				434DCE5A159B3EF300D9D585 /* Shake_2_Setup.png in Resources */,
+				434DCE5B159B3EF300D9D585 /* Shake_3_Setup.png in Resources */,
+				434DCE5C159B3EF300D9D585 /* Shake_4_Setup.png in Resources */,
+				434DCE5D159B3EF300D9D585 /* Shake_5_Setup.png in Resources */,
+				434DCE5E159B3EF300D9D585 /* Shake_6_Setup.png in Resources */,
+				434DCE5F159B3EF300D9D585 /* Shake_7_Credits.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,6 +646,35 @@
 			files = (
 				4380D1AA1586A1F000FF915A /* main.m in Sources */,
 				4380D1AE1586A1F000FF915A /* JdAppDelegate.m in Sources */,
+				4380D1D21586A31000FF915A /* JdMainController.m in Sources */,
+				4380D1E41589097D00FF915A /* JdSineSignal.m in Sources */,
+				4380D1E81589110C00FF915A /* JdRMS.m in Sources */,
+				4380D1ED1589149D00FF915A /* NSMutableArray+QueueAdditions.m in Sources */,
+				43958AA3158A953200E4566A /* GraphView.m in Sources */,
+				43958AA8158A9C0100E4566A /* GraphViewSegment.m in Sources */,
+				43958AAB158A9CDB00E4566A /* GraphTextView.m in Sources */,
+				43958AAE158A9E5000E4566A /* QuartzHelpers.m in Sources */,
+				43692FAA158B5CDA006F75F3 /* JdAccelerometer.m in Sources */,
+				43692FB3158B65D4006F75F3 /* JdFilterBase.m in Sources */,
+				43692FB6158B6787006F75F3 /* JdGenericFilter.m in Sources */,
+				43692FBA158B708C006F75F3 /* JdMasterControl.m in Sources */,
+				43692FBE158B70EF006F75F3 /* JdSimpleLP.m in Sources */,
+				43692FC1158B7101006F75F3 /* JdSimpleHP.m in Sources */,
+				43969EBF158D323E00B205EE /* JdConfiguration.m in Sources */,
+				43CBCE181592790E00A515E4 /* JdSimpleFilter.m in Sources */,
+				43C6A54A1593372400706A1F /* JdStepSignal.m in Sources */,
+				43C6A54E1593398200706A1F /* JdImpulseSignal.m in Sources */,
+				43C6A55B1593772600706A1F /* JdAxis.m in Sources */,
+				43C6A55E1593800200706A1F /* JdFilterList.m in Sources */,
+				439A2F181593BC850001E992 /* JdSetupNavigation.m in Sources */,
+				439A2F261593C29A0001E992 /* JdOverallSetupController.m in Sources */,
+				439A2F301593E0D10001E992 /* JdAxisSetupController.m in Sources */,
+				439A2F361593F2670001E992 /* JdSignalSetupController.m in Sources */,
+				439A2F3C1593F46E0001E992 /* JdFilterSetupController.m in Sources */,
+				439A2F421593F5CB0001E992 /* JdDetectionSetupController.m in Sources */,
+				433A16021594E3A10081F227 /* JdSineSignalCell.m in Sources */,
+				433A16091594F2EA0081F227 /* JdSineSetupController.m in Sources */,
+				4335667115989F6700D8A010 /* JdCreditsController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +780,7 @@
 				4380D1B31586A1F000FF915A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

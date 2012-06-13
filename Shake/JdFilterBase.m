@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdFilterBase.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,71 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdFilterBase.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdFilterBase
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Synthesize
+@synthesize tag;
+@synthesize input = _input;
+@synthesize output = _output;
+@synthesize name = _name;
+@synthesize description = _description;
+
+#pragma mark - Instance Methods
+
+// Initialise this base class
+-(id)init
+{
+    if(!(self = [super init])) return self;
+    
+    tag = 0;
+    _name = [NSString stringWithString: @"Pass Through"];
+    _description = [NSString stringWithString: @"Passes data through without filtering"];
+    [self reset];
+    
+    return self;
+}
+
+// Calculate the reseponse of the filter
+// The expectation is that the sub-classed filters will override this method
+-(double)calculate
+{
+    return _input;
+}
+
+// Calculate the response to a new input, and return that result.
+// If the sub-classed filters have over-ridden the calculate method
+// then the specific filters calculate method will be called from here
+-(double)newInput:(double)data
+{
+    _input = data;
+    _output = [self calculate];
+    return _output;
+}
+
+
+// Calculate the response to a new input.
+// If the sub-classed filters have over-ridden the calculate method
+// then the specific filters calculate method will be called from here
+-(void)setInput:(double)inputData
+{
+    _input = inputData;
+    _output = [self calculate];
+}
+
+// Reset all calculate data in this class
+-(void)reset
+{
+    _input = 0.0;
+    _output = 0.0;
+}
+
+// Create an independent copy of this filter
+-(id)copyWithZone:(NSZone *)zone
+{
+    return [[JdFilterBase alloc] init];
+}
 
 @end

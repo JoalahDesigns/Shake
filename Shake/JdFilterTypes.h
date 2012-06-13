@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdFilterTypes.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,20 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#ifndef JdFilterTypes_h
+#define JdFilterTypes_h
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+// List of possible filter types that can be instantiated in the configuration
+// NOTE that the actual filter associated with each type is an arbitrary choice
+typedef enum {
+    kFilterType1 = 0,
+    kFilterType2,
+    kFilterType3,
+    kFilterType4,
+    kFilterType5,
+    kFilterType6,
+    kFilterType7,
+    kFILTERTYPECOUNT
+} FilterTypeEnum;
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
-
-@end
+#endif

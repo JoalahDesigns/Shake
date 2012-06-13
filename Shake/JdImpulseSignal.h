@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdImpulseSignal.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,19 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdImpulseSignal : NSObject
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) int tag;              // Axis that this generator belongs to
+@property (nonatomic) double amplitude;     // Generated signals amplitude
+@property (nonatomic) uint leadIn;          // Number of "zero" samples generated before generating the real data
+
+#pragma mark - Instance Methods
+-(id)initWithAmplitude:(float)amplitude LeadIn:(uint)leadIn;
+-(double)sample;
+-(void)reset;
 
 @end

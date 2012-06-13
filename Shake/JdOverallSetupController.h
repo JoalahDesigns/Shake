@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdOverallSetupViewController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -31,10 +31,21 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - Forward Declaration
+@class JdConfiguration;
+
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdOverallSetupController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) JdConfiguration* configuration;   // Configuration data for all axes
+
+@property (nonatomic, strong) IBOutlet UILabel* frequency;      // Sampling frequency for the overall system
+@property (nonatomic, strong) IBOutlet UITableView* table;      // List of all axes to select from
+
+@property (nonatomic, strong) IBOutlet UILabel* signalColor;    // Color of raw signal trace
+@property (nonatomic, strong) IBOutlet UILabel* filteredColor;  // Color of filtered signal trace
+@property (nonatomic, strong) IBOutlet UILabel* rmsColor;       // Color of RMS signal trace
+@property (nonatomic, strong) IBOutlet UILabel* eventColor;     // Color of triggered event signal trace
 
 @end

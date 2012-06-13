@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdGenericFilter.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,12 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdFilterBase.h"
+#import "JdDigitalFilterTemplate.h"
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdGenericFilter : JdFilterBase
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
-
+#pragma mark - Instance Methods
+-(id)initFilter:(DigitalFilterTemplate)filter;
 @end

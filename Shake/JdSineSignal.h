@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSineWave.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -32,9 +32,17 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdSineSignal : NSObject
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) int tag;              // Axis that this generator belongs to
+@property (nonatomic) double amplitude;     // Generated signals amplitude
+@property (nonatomic) double frequency;     // Generated signals frequency
+@property (nonatomic) double sampleRate;    // base sample rate of the overall system 
+@property (nonatomic) uint leadIn;          // Number of "zero" samples generated before generating the real data
 
+#pragma mark - Instance Methods
+-(id)initWithAmplitude:(float)amplitude Frequency:(float)frequency SampleRate:(float)sampleRate LeadIn:(uint)leadIn;
+-(double)sample;
+-(void)reset;
 @end

@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSignalSetupController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -31,10 +31,19 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - Forward Declaration
+@class JdAxis;
+@class JdSineSignalCell;
+
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdSignalSetupController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) JdAxis* axis;                     // Axis object being configured
+@property (nonatomic, strong) IBOutlet UILabel* headingName;    // Name of the axis being configured
+@property (nonatomic, strong) IBOutlet UITableView* table;      // List of signal generators to select from
+
+// Dummy properties used to instantiate custom Table View cells
+@property (strong, nonatomic) IBOutlet JdSineSignalCell* dummySineSignalCell;
 
 @end

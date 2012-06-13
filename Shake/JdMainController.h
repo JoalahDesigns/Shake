@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdMainController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -30,11 +30,24 @@
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #import <UIKit/UIKit.h>
+#import "GraphView.h"
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdMainController : UIViewController
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) IBOutlet UIButton* run_pause;     // Run/Pause button
 
+@property(nonatomic,strong) IBOutlet UILabel* xAxisSummary;     // Summary text of x Axis
+@property(nonatomic,strong) IBOutlet UILabel* yAxisSummary;     // Summary text of y Axis
+@property(nonatomic,strong) IBOutlet UILabel* zAxisSummary;     // Summary text of z Axis
+
+@property(nonatomic, strong) IBOutlet GraphView *xAxisGraph;    // Graph of x Axis
+@property(nonatomic, strong) IBOutlet GraphView *yAxisGraph;    // Graph of y Axis
+@property(nonatomic, strong) IBOutlet GraphView *zAxisGraph;    // Graph of z Axis
+
+#pragma mark - Instance Methods
+-(IBAction)run_pausePressed:(id)sender;
+-(IBAction)setupPressed:(id)sender;
+-(IBAction)creditsPressed:(id)sender;
 @end

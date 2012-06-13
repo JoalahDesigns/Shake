@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdRMS.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -32,9 +32,20 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdRMS : NSObject
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) int tag;                  // Axis this RMS calculation belongs to
+@property (nonatomic) uint retainCount;         // Number of contiguous samples to retain when calculating the rms value
+@property (nonatomic) double triggerLevel;      // RMS level threshold needed to be reached in order to trigger
+@property (nonatomic) uint triggerCount;        // Number of contiguous samples above the trigger threshold in order to trigger
+@property (nonatomic, readonly) BOOL triggered; // RMS calclation is in the trigger state
 
+#pragma mark - Instance Methods
+-(id)init;
+-(id)initRetaining:(uint)count;
+-(void)reset;
+-(void)newSample:(double)sample;
+-(double)calculate;
+-(double)calculateNewSample:(double)sample;
 @end

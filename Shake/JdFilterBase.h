@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdFilterBase.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,27 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdFilterBase : NSObject<NSCopying>
+{
+    // Backing vars for readonly and/or inherited properties
+    @protected
+    double _input;              // Latest signal input to the filter
+    double _output;             // Calculated output from the filter
+    NSString* _name;            // Simple name of the filter
+    NSString* _description;     // Simple description of the filter
+}
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) int tag;                          // Axis that this filter belongs to
+@property (nonatomic) double input;                     // Latest signal input to the filter
+@property (nonatomic, readonly) double output;          // Calculated output from the filter
+@property (nonatomic, readonly) NSString* name;         // Simple name of the filter
+@property (nonatomic, readonly) NSString* description;  // Simple description of the filter
 
+#pragma mark - Instance Methods
+-(double)newInput:(double)data;
+-(void)reset;
 @end

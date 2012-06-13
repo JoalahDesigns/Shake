@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdStepSignal.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,59 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdStepSignal.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdStepSignal
+{
+    uint leadInSamples; // Number of "zero" samples that have already been generated
+}
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Synthesize
+@synthesize tag;
+@synthesize amplitude;
+@synthesize leadIn;
+
+#pragma mark - Instance Methods
+
+// Initialise the class
+-(id)initWithAmplitude:(float)newAmplitude LeadIn:(uint)newLeadIn
+{
+    if(!(self = [super init])) return self;
+    
+    amplitude = newAmplitude;
+    leadIn = newLeadIn;
+    
+    [self reset];
+
+    return self;
+}
+
+// Reset all calculated data in the signal generator
+-(void)reset
+{
+    leadInSamples = 0;
+}
+
+// Set the Amplitude of the Step Response and reset all calculated data
+-(void)setAmplitude:(double)value
+{
+    amplitude = value;
+    [self reset];
+}
+
+// Set the number of lead In samples of the generator and reset all calculated data
+-(void)setLeadIn:(uint)value
+{
+    leadIn = value;
+    [self reset];
+}
+
+// Generate a new sample from the signal generator
+-(double)sample
+{
+    leadInSamples++;
+    return (leadInSamples<=leadIn)?0.0:amplitude;
+}
 
 @end

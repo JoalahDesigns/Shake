@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdAxisSetupController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -31,10 +31,15 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - Forward Declaration
+@class JdAxis;
+
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdAxisSetupController : UIViewController<UITableViewDelegate, UITableViewDataSource>
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) JdAxis* axis;                     // Axis object being configured
+@property (nonatomic, strong) IBOutlet UILabel* headingName;    // Name of the axis being configured
+@property (nonatomic, strong) IBOutlet UITableView* table;      // List of sections within an axis to configure
 
 @end
