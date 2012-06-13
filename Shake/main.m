@@ -13,6 +13,13 @@
 int main(int argc, char *argv[])
 {
     @autoreleasepool {
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([JdAppDelegate class]));
+        int retVal = 0;
+        @try {
+            retVal = UIApplicationMain(argc, argv, nil, NSStringFromClass([JdAppDelegate class]));
+        }
+        @catch (NSException *exception) {
+            NSLog(@"Exception - %@",[exception description]);
+            exit(EXIT_FAILURE);
+        }
     }
 }

@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdFilterList.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,21 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "JdFilterTypes.h"
+
+#pragma mark - Forward Declaration
+@class JdFilterBase;
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdFilterList : NSObject
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
-
+#pragma mark - Instance Methods
+- (id)initWithSampleFrequency:(double)frequency;
+-(JdFilterBase*)filterImplementationForType:(FilterTypeEnum)forFilterType;
+-(JdFilterBase*)filterCopyOfType:(FilterTypeEnum)forFilterType;
+-(NSString*)filterNameForType:(FilterTypeEnum)forFilterType;
+-(NSString*)filterDescriptionForType:(FilterTypeEnum)forFilterType;
 @end
+
+

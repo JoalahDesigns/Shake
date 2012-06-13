@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  NSMutableArray+QueueAdditions.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,17 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+//
+// NOTE that this file was derived from the answer provided on StackOverflow
+//
+//  http://stackoverflow.com/questions/817469/how-do-i-make-and-use-a-queue-in-objective-c
+//
+#pragma mark - Instance Methods
+@interface NSMutableArray (QueueAdditions)
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
-
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
-
+#pragma mark - Instance Methods
+- (id) dequeue;
+- (void) enqueue:(id)obj;
+- (void) enqueue:(id)obj retainOnly:(uint)count;
+- (void)retainOnly:(uint)count;
 @end

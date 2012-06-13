@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdCreditsController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -32,9 +32,11 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdCreditsController : UIViewController
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Instance Methods
+-(IBAction)dismissViewController:(id)sender;
+-(IBAction)displayJoalahDesigns:(id)sender;
+-(IBAction)displayJoalahAppsShake:(id)sender;
 
 @end

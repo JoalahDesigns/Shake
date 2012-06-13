@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSineSignalCell.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -31,10 +31,26 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - Forward Declaration
+@class JdAxis;
+
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdSineSignalCell : UITableViewCell
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property(nonatomic, strong) UINavigationItem* navigationItem;              // Navigation items needed to instantiate Sine setup Controller
+@property(nonatomic,strong) UINavigationController* navigationController;   // Navigation items needed to instantiate Sine setup Controller
 
+@property (strong, nonatomic) JdAxis* axis;                 // Axis object being configured
+
+@property (strong, nonatomic) IBOutlet UILabel* frequency;  // Frequency of the sine wave signal generator
+@property (strong, nonatomic) IBOutlet UILabel* amplitude;  // Amplitude of the sine wave signal generator
+
+#pragma mark - Instance Methods
+-(IBAction)setPressed:(id)sender;
+
+#pragma mark - Class Methods
++(NSString*)cellIdentifier;
++(NSString*)nibName;
++(float)rowHeight;
 @end

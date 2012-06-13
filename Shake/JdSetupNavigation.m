@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSetupNavigation.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,32 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdSetupNavigation.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Private Interface
+@interface JdSetupNavigation ()
+@end
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Implementation
+@implementation JdSetupNavigation
+
+#pragma mark - Instance Methods
+
+// Iniialise the class
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        self.navigationBar.tintColor = [UIColor colorWithRed: 10.0f/255.0f green:100.0f/255.0F blue: 10.0f/255.0f alpha:1.0f];
+        self.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
+    }
+    return self;
+}
+
+// This App only supports portrait orientation
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
 
 @end

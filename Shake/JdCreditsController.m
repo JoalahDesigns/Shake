@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdCreditsController.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,48 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdCreditsController.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdCreditsController
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Instance Methods
+
+// Initialise the class
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
+{
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        // Custom initialization
+    }
+    return self;
+}
+
+// This App only supports portrait orientation
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+{
+    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+}
+
+// User wants to dismiss the credist view controller
+-(IBAction)dismissViewController:(id)sender
+{
+    [self dismissModalViewControllerAnimated:YES];
+}
+
+// User wants to see the Joalah Designs LLC website
+-(IBAction)displayJoalahDesigns:(id)sender
+{
+    NSURL *target = [[NSURL alloc] initWithString:@"http://www.JoalahDesigns.com"];
+    [[UIApplication sharedApplication] openURL:target];
+}
+
+// User wants to see the Joalah Apps website for this App
+-(IBAction)displayJoalahAppsShake:(id)sender
+{
+    NSURL *target = [[NSURL alloc] initWithString:@"http://www.JoalahApps.com/Shake"];
+    [[UIApplication sharedApplication] openURL:target];
+}
+
 
 @end

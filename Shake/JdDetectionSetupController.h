@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdDetectionSetupController.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -31,10 +31,26 @@
 
 #import <UIKit/UIKit.h>
 
+#pragma mark - Forward Declaration
+@class JdAxis;
+
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdDetectionSetupController : UIViewController
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, strong) JdAxis* axis;                             // Axis object being configured
+@property (nonatomic, strong) IBOutlet UILabel* headingName;            // Name of the axis being configured
 
+@property (nonatomic, strong) IBOutlet UILabel* calculationWindow;      // Number of samples for the RMS calculation window
+@property (nonatomic, strong) IBOutlet UILabel* detectionWindow;        // Number of samples for the RMS detection window
+@property (nonatomic, strong) IBOutlet UILabel* detectionLevel;         // Level at which RMS detection occurs
+
+@property (nonatomic, strong) IBOutlet UISlider* calculationSlider;     // Number of samples for the RMS calculation window
+@property (nonatomic, strong) IBOutlet UISlider* detectionWindowSlider; // Number of samples for the RMS detection window
+@property (nonatomic, strong) IBOutlet UISlider* detectionLevelSlider;  // Level at which RMS detection occurs
+
+#pragma mark - Instance Methods
+- (IBAction) calculationSliderChanged:(id)sender; 
+- (IBAction) detectionWindowSliderChanged:(id)sender; 
+- (IBAction) detectionLevelSliderChanged:(id)sender; 
 @end

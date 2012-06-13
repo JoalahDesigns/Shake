@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSimpleFilter.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,37 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdSimpleFilter.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdSimpleFilter
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Instance Methods
+
+// Return a dummy filter constant for this class
+// The expectation is that the sub-classed filters will override this method
+-(double)determineFilterConstant
+{
+    return 0.0;
+}
+
+// Initialise this class
+-(id)initWithSampleRate:(double)rate cutoffFrequency:(double)freq
+{
+    if (rate<=0.0 || rate>100.0) return nil;
+    if (freq<0.0 || freq>rate/2.0) return nil;
+    
+    if(!(self = [super init])) return self;
+    
+    sampleRate = rate;
+    cutoffFrequency = freq;
+    
+    filterConstant = [self determineFilterConstant];
+    
+    [super reset];
+
+    return self;
+    
+}
 
 @end

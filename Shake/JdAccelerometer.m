@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdAccelerometer.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,66 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdAccelerometer.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdAccelerometer
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Synthesize
+@synthesize pause;
+@synthesize sampleFrequency;
+@synthesize acceleration = _acceleration;
+@synthesize outputDelegate;
+
+#pragma mark - Instance Methods
+
+// Initialise this class
+-(id)initWithSampleFrequency:(double)sampleFreq
+{
+    if (sampleFreq<=0.0 || sampleFreq>=100.0) return nil;
+    if(!(self = [super init])) return self;
+    
+    sampleFrequency = sampleFreq;
+    pause = YES;
+    outputDelegate = nil;
+    _acceleration = [[UIAcceleration alloc] init];
+    
+    @try {
+        
+        [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/sampleFrequency];
+        [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+    }
+    
+    @catch (NSException * e) {
+        
+        self = nil;
+        return self;
+        
+    }
+    
+    
+    return self;
+}
+
+// Receive the actual accleration data from the hardware accelerometers
+// and pass it onto the defined delegate
+-(void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration 
+{
+    if (!pause)
+    {
+        _acceleration = acceleration;
+        if (outputDelegate) {
+            [outputDelegate acceleration:acceleration];
+        }
+    }
+}
+
+// Set the sampling frequency of the hardware accelerometers
+-(void)setSampleFrequency:(double)sampleFreq
+{
+    if (sampleFreq<=0.0 || sampleFreq>=100.0) return;
+    sampleFrequency = sampleFreq;
+    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:1/sampleFrequency];
+}
 
 @end

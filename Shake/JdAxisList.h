@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdAxisList.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,16 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#ifndef JdAxisList_h
+#define JdAxisList_h
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+// List of the possible axes that can be associated with a graph.
+typedef enum 
+{
+    kAxisX = 0,
+    kAxisY,
+    kAxisZ,
+    kAXISCOUNT
+} AxisListEnum;
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
-
-@end
+#endif

@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdConfiguration.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,19 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "JdAxisList.h"
+
+#pragma mark - Forward declarations
+@class JdAxis;
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdConfiguration : NSObject
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Instance Methods
+-(JdAxis*)objectForAxis:(AxisListEnum)axisName;
 
+#pragma mark - Class Methods
++(double) sampleFrequencyDefault;
 @end

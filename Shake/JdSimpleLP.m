@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSimpleLP.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,43 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import "JdSimpleLP.h"
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#pragma mark - Implementation
+@implementation JdSimpleLP
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Instance Methods
+
+// Initialise the class
+-(id)initWithSampleRate:(double)rate cutoffFrequency:(double)freq
+{
+    if(!(self = [super initWithSampleRate:rate cutoffFrequency:freq])) return self;
+    
+    _name = [NSString stringWithString: @"Simple Low Pass"];
+    _description = [NSString stringWithFormat:@"Apple's Low Pass Filter %0.0f Hz cutoff", cutoffFrequency];
+
+    return self;
+}
+
+// Calculate the filter constant for a simple low pass filter
+-(double)determineFilterConstant
+{
+    double dt = 1.0 / sampleRate;
+    double RC = 1.0 / cutoffFrequency;
+    return dt / (dt + RC);
+}
+
+// Calculate the response to a new input to the filter
+// NOTE that this is called from the ultimate base class
+-(double)calculate
+{
+    return filterConstant * _input + (1.0 - filterConstant) * _output;
+}
+
+// Create an independent copy of this filter
+-(id)copyWithZone:(NSZone *)zone
+{
+    return [[JdSimpleLP allocWithZone:zone] initWithSampleRate:sampleRate cutoffFrequency:cutoffFrequency];
+}
 
 @end

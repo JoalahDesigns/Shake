@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  NSMutableArray+QueueAdditions.m
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,48 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+//
+// NOTE that this file was derived from the answer provided on StackOverflow
+//
+//  http://stackoverflow.com/questions/817469/how-do-i-make-and-use-a-queue-in-objective-c
+//
 
-#pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+#import "NSMutableArray+QueueAdditions.h"
 
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+#pragma mark - Implementation
+@implementation NSMutableArray (QueueAdditions)
 
+#pragma mark - Instance Methods
+// Queues are first-in-first-out, so we remove objects from the head
+- (id) dequeue {
+    if ([self count] == 0) return nil; // to avoid raising exception (Quinn)
+    id headObject = [self objectAtIndex:0];
+    if (headObject != nil) {
+        [self removeObjectAtIndex:0];
+    }
+    return headObject;
+}
+
+// Add to the tail of the queue (no one likes it when people cut in line!)
+- (void) enqueue:(id)anObject {
+    [self addObject:anObject];
+    //this method automatically adds to the end of the array
+}
+
+// Add an object but on retain the last N objects
+- (void) enqueue:(id)anObject retainOnly:(uint)count {
+    [self addObject:anObject];
+    while([self count]>count) {
+        [self dequeue];
+    }
+}
+
+// Clean out an exisiting queue to hold at most the requested number of objects
+-(void)retainOnly:(uint)count
+{
+    while([self count]>count) {
+        [self dequeue];
+    }
+    
+}
 @end

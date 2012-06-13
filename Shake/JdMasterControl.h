@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdMasterControl.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,25 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#import "JdAccelerometerProtocol.h"
+
+#pragma mark - Forward declarations
+@class GraphView;
+@class JdConfiguration;
+
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdMasterControl : NSObject<JdAccelerometerProtocol>
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) GraphView* xAxisGraph;    // Graph for the X axis
+@property (nonatomic) GraphView* yAxisGraph;    // Graph for the Y axis
+@property (nonatomic) GraphView* zAxisGraph;    // Graph for the Z axis
+@property (nonatomic) BOOL pause;               // Pause processing
+@property (nonatomic, strong) JdConfiguration* configuration;   // Common configuration for all axes
 
+#pragma mark - Instance Methods
+-(id)initWithConfiguration:(JdConfiguration*)config;
 @end

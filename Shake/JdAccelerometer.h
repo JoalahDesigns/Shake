@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdAccelerometer.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -29,12 +29,18 @@
 // (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
 // SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "JdAccelerometerProtocol.h"
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
+@interface JdAccelerometer : NSObject<UIAccelerometerDelegate>
 
 #pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@property (nonatomic) BOOL pause;                                           // Pause the accelerometer data
+@property (nonatomic) double sampleFrequency;                               // Sample frequency of the overall system
+@property (nonatomic, readonly) UIAcceleration* acceleration;               // Last acceleration value read from the acclerometer
+@property (nonatomic, retain) id<JdAccelerometerProtocol> outputDelegate;   // Delegate to receive acceleration data
 
+#pragma mark - Instance Methods
+-(id)initWithSampleFrequency:(double)frequency;
 @end

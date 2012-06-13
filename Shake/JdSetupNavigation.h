@@ -1,5 +1,5 @@
 //
-//  JdAppDelegate.h
+//  JdSetupNavigation.h
 //
 // Copyright (c) 2012, Joalah Designs LLC
 // All rights reserved.
@@ -32,9 +32,6 @@
 #import <UIKit/UIKit.h>
 
 #pragma mark - Public Interface
-@interface JdAppDelegate : UIResponder <UIApplicationDelegate>
-
-#pragma mark - Properties
-@property (strong, nonatomic) UIWindow *window;
+@interface JdSetupNavigation : UINavigationController
 
 @end
