@@ -32,11 +32,11 @@ This application is released under a BSD-3 license. So you are basically free to
 
 ## Screen shots
 
-<img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_1_Main.png" width="340px" /><img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_2_Setup.png" width="320px" />
 
-<img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_3_Setup.png" width="340px" /><img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_4_Setup.png" width="320px" />
+![Main screen](http://github.com/JoalahDesigns/Shake/raw/master/Shake_1_Main.png) &nbsp; ![Setup Overview](http://github.com/JoalahDesigns/Shake/raw/master/Shake_2_Setup.png)
 
-<img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_5_Setup.png" width="340px" /><img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_6_Setup.png" width="320px" />
+![Axis Setup](http://github.com/JoalahDesigns/Shake/raw/master/Shake_3_Setup.png) &nbsp; ![Signal Source](http://github.com/JoalahDesigns/Shake/raw/master/Shake_4_Setup.png)
 
-<img src="http://github.com/JoalahDesigns/Shake/raw/master/Shake_7_Setup.png" width="340px" />
+![Filter Setup](http://github.com/JoalahDesigns/Shake/raw/master/Shake_5_Setup.png) &nbsp; ![Level Detection](http://github.com/JoalahDesigns/Shake/raw/master/Shake_6_Setup.png)
 
+![Credits screen](http://github.com/JoalahDesigns/Shake/raw/master/Shake_7_Credits.png)
