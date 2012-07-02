@@ -84,19 +84,47 @@ const static double cutoffFrequency = 5.0;  // Default cutoff frequency for the 
                 break;
                 
             case kFilterType4:
-                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2OLP5Hz]];
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_LP_50Hz]];
                 break;
                 
             case kFilterType5:
-                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2OHP5Hz]];
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_HP_50Hz]];
                 break;
                 
             case kFilterType6:
-                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2OBP1HzTo3Hz]];
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_BP_05HzTo30Hz]];
                 break;
                 
             case kFilterType7:
-                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2OBP25HzTo5Hz]];
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_BP_25HzTo50Hz]];
+                break;
+                
+            case kFilterType8:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth3O_BP_05HzTo30Hz]];
+                break;
+                
+            case kFilterType9:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth3O_BP_25HzTo50Hz]];
+                break;
+                
+            case kFilterType10:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_BP_05HzTo40Hz]];
+                break;
+                
+            case kFilterType11:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth2O_BP_40HzTo80Hz]];
+                break;
+                
+            case kFilterType12:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth3O_BP_05HzTo40Hz]];
+                break;
+                
+            case kFilterType13:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth3O_BP_20HzTo60Hz]];
+                break;
+                
+            case kFilterType14:
+                [filters addObject:[[JdGenericFilter alloc] initFilter:butterworth3O_BP_40HzTo80Hz]];
                 break;
                 
             default:

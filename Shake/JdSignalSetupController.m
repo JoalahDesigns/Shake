@@ -146,6 +146,7 @@
             break;
     }
     
+    cell.accessoryType = UITableViewCellAccessoryNone;
     if (((SignalSourceEnum)indexPath.row)==axis.signalSource) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
         checkedIndexPath = indexPath;

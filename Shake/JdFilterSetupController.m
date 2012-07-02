@@ -61,6 +61,8 @@
 {
     [super viewDidLoad];
     headingName.text = axis.axisName;
+    [table scrollToRowAtIndexPath:[NSIndexPath indexPathForRow:axis.filterType inSection:0] atScrollPosition:UITableViewScrollPositionTop animated:NO];
+     
 }
 
 // This App only supports portrait orientation
@@ -96,6 +98,7 @@
     // Set up the cell...
     cell.textLabel.text = [axis filterNameForType:(FilterTypeEnum)indexPath.row];
     cell.detailTextLabel.text = [axis filterDescriptionForType:(FilterTypeEnum)indexPath.row];
+    cell.accessoryType = UITableViewCellAccessoryNone;
     
     if (((FilterTypeEnum)indexPath.row)==axis.filterType) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;

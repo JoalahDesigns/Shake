@@ -42,6 +42,13 @@ typedef enum {
     kFilterType5,
     kFilterType6,
     kFilterType7,
+    kFilterType8,
+    kFilterType9,
+    kFilterType10,
+    kFilterType11,
+    kFilterType12,
+    kFilterType13,
+    kFilterType14,
     kFILTERTYPECOUNT
 } FilterTypeEnum;
 
