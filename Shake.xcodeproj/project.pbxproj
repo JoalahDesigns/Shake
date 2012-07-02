@@ -45,6 +45,7 @@
 		4380D1E41589097D00FF915A /* JdSineSignal.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1E31589097D00FF915A /* JdSineSignal.m */; };
 		4380D1E81589110C00FF915A /* JdRMS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1E71589110C00FF915A /* JdRMS.m */; };
 		4380D1ED1589149D00FF915A /* NSMutableArray+QueueAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4380D1EC1589149D00FF915A /* NSMutableArray+QueueAdditions.m */; };
+		438E9BE915A1EA0E00F5588B /* ShakeIconImage@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 438E9BE815A1EA0E00F5588B /* ShakeIconImage@2x.png */; };
 		43958AA3158A953200E4566A /* GraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AA2158A953200E4566A /* GraphView.m */; };
 		43958AA5158A9ACD00E4566A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43958AA4158A9ACD00E4566A /* QuartzCore.framework */; };
 		43958AA8158A9C0100E4566A /* GraphViewSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 43958AA7158A9C0100E4566A /* GraphViewSegment.m */; };
@@ -131,6 +132,7 @@
 		4380D1E71589110C00FF915A /* JdRMS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdRMS.m; sourceTree = "<group>"; };
 		4380D1EB1589149D00FF915A /* NSMutableArray+QueueAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+QueueAdditions.h"; sourceTree = "<group>"; };
 		4380D1EC1589149D00FF915A /* NSMutableArray+QueueAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+QueueAdditions.m"; sourceTree = "<group>"; };
+		438E9BE815A1EA0E00F5588B /* ShakeIconImage@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ShakeIconImage@2x.png"; sourceTree = "<group>"; };
 		43958AA1158A953200E4566A /* GraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GraphView.h; sourceTree = "<group>"; };
 		43958AA2158A953200E4566A /* GraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GraphView.m; sourceTree = "<group>"; };
 		43958AA4158A9ACD00E4566A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
@@ -370,6 +372,7 @@
 		4380D1CD1586A27400FF915A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				438E9BE815A1EA0E00F5588B /* ShakeIconImage@2x.png */,
 				434DCE46159B342700D9D585 /* ShakeIconImage.png */,
 				43B188121598BF6500A9D1F2 /* icon-ipad-shake-144x144.png */,
 				43B188101598BF6000A9D1F2 /* icon-ipad-shake-72x72.png */,
@@ -634,6 +637,7 @@
 				434DCE5D159B3EF300D9D585 /* Shake_5_Setup.png in Resources */,
 				434DCE5E159B3EF300D9D585 /* Shake_6_Setup.png in Resources */,
 				434DCE5F159B3EF300D9D585 /* Shake_7_Credits.png in Resources */,
+				438E9BE915A1EA0E00F5588B /* ShakeIconImage@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
