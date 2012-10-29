@@ -181,7 +181,7 @@
 		43C6A56015938F4800706A1F /* JdAxisList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JdAxisList.h; sourceTree = "<group>"; };
 		43CBCE161592790E00A515E4 /* JdSimpleFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JdSimpleFilter.h; sourceTree = "<group>"; };
 		43CBCE171592790E00A515E4 /* JdSimpleFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JdSimpleFilter.m; sourceTree = "<group>"; };
-		43EF9D14163EFB7800E3AA25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		43EF9D14163EFB7800E3AA25 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "../Default-568h@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -311,7 +311,6 @@
 		4380D18E1586A1EF00FF915A = {
 			isa = PBXGroup;
 			children = (
-				43EF9D14163EFB7800E3AA25 /* Default-568h@2x.png */,
 				434DCE4D159B354500D9D585 /* GitHub */,
 				4380D1A31586A1F000FF915A /* Shake */,
 				4380D19C1586A1F000FF915A /* Frameworks */,
@@ -375,6 +374,7 @@
 		4380D1CD1586A27400FF915A /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				43EF9D14163EFB7800E3AA25 /* Default-568h@2x.png */,
 				438E9BE815A1EA0E00F5588B /* ShakeIconImage@2x.png */,
 				434DCE46159B342700D9D585 /* ShakeIconImage.png */,
 				43B188121598BF6500A9D1F2 /* icon-ipad-shake-144x144.png */,

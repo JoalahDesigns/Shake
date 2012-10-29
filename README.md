@@ -30,6 +30,13 @@ Shake! is a re-write of Apple's AccelerometerGraph App that includes additional 
 
 This application is released under a BSD-3 license. So you are basically free to do what ever you want as long as you acknowledge me and keep the copyright notices intact. 
 
+## Versions supported
+
+iOS Versions supported: 4 5 and 6
+iPod/iPhones supported: 3.5 and 4 inch screens
+iPad Supported:         Yes, but not really designed for the iPad (I will be working on that)
+
+
 ## Screen shots
 
 
