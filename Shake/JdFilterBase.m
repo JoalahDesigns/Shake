@@ -49,8 +49,8 @@
     if(!(self = [super init])) return self;
     
     tag = 0;
-    _name = [NSString stringWithString: @"Pass Through"];
-    _description = [NSString stringWithString: @"Passes data through without filtering"];
+    _name = @"Pass Through";
+    _description = @"Passes data through without filtering";
     [self reset];
     
     return self;

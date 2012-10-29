@@ -41,7 +41,7 @@
 {
     if(!(self = [super initWithSampleRate:rate cutoffFrequency:freq])) return self;
     
-    _name = [NSString stringWithString: @"Simple Low Pass"];
+    _name = @"Simple Low Pass";
     _description = [NSString stringWithFormat:@"Apple's Low Pass Filter %0.0f Hz cutoff", cutoffFrequency];
 
     return self;

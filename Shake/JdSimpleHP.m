@@ -49,7 +49,7 @@
 {
     if(!(self = [super initWithSampleRate:rate cutoffFrequency:freq])) return self;
     
-    _name = [NSString stringWithString: @"Simple High Pass"];
+    _name = @"Simple High Pass";
     _description = [NSString stringWithFormat:@"Apple's High Pass Filter %0.0f Hz cutoff", cutoffFrequency];
     
     [self localReset];
